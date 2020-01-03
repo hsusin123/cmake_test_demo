@@ -1,0 +1,5 @@
+#pragma once
+
+#cmakedefine VERSION @VERSION@  //若VERSION未定义，会注释整个宏
+#cmakedefine ENABLE        //若ENABLE未定义，会注释整个
+#define ERR @ERR@     //若ERR未定义，不会注释整个宏
