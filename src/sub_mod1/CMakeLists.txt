@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(sub_mod1)
 message("var sub can use in subdir :" ${sub})
+message("sub_mod1----" ${CMAKE_CURRENT_BINARY_DIR})
 add_library(sub_mod1 SHARED src/source1.cpp)
 target_include_directories(sub_mod1 
 PUBLIC
